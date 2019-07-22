@@ -14,9 +14,9 @@
 Before Use It, I Wanna To Let You Know That I Just Copied The Code Over The Internet So I Still Did not Preview The Code So Yeah & I Will Add My Edits Soon! :)
 ## ----------------------------------------
 # Why ?
-After I Started To Know More About Privacy & How Much FB & Other Companies Mining My Data I Encourged More To Build Open Source Alts Like Youtube & invidio.us So I Said To 
-Myself Why Not Just Build A Website To Know My IP But At Same Time Respect My Privacy ? So Here We Are! & Althought That The Website Uses *WebRTC* To Check IPs & Most Of Us Disabled It
-But This Was The Only Way To Know IPs Without Their APIs/Parties
+After I Started To Know More About Privacy & How Much FB & Other Companies Are Mining Our Data I Encouraged More To Build Open Source Alts Like Youtube & invidio.us So I Said To 
+Myself Why Not Just Build A Website To Know My IP But At Same Time Respect My Privacy ? So Here We Are! & Although The Website Uses *WebRTC* To Check IPs & Most Of Us Disabled It
+But This Is The Only Way To Know IPs Without Third APIs/Parties
 ## ----------------------------------------
 # What's New ?                      
 ## (For Users): 
