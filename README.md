@@ -1,14 +1,14 @@
 | #  | Name | Link |
 | ------------- | ------------- | ------------- |
-| 1  | Read Before Use  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------1  |
-| 2  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
-| 3  | What's New  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------3  |
-| 4  | How To Install| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------4  |
-| 5  | Downloads  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------5  |
-| 6  | Preview/Demo  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------6  |
+| 1  | Read Before Use  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------  |
+| 2  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------1  |
+| 3  | What's New  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
+| 4  | How To Install| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------3  |
+| 5  | Downloads  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------4  |
+| 6  | Preview/Demo  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------5  |
 | 7  | License  | https://github.com/EsmailELBoBDev2/Whatismyip/blob/master/COPYING |
-| 8  | My Other Projects  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------7  |
-| 9  | Thx!  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------8  |
+| 8  | My Other Projects  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------6  |
+| 9  | Thx!  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------7  |
 ## ----------------------------------------
 # Read Before Use
 Before Use It, I Wanna To Let You Know That I Just Copied The Code Over The Internet So I Still Did not Preview The Code So Yeah & I Will Add My Edits Soon! :)
