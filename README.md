@@ -1,8 +1,8 @@
 | #  | Name | Link |
 | ------------- | ------------- | ------------- |
-| 1  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------  |
+| 1  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#----------------------------------------  |
 | 2  | What's New  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------1  |
-| 3  | How To Install| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
+| 3  | How To Edit Codes| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
 | 4  | Downloads  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------3  |
 | 5  | Preview/Demo  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------4  |
 | 6  | License  | https://github.com/EsmailELBoBDev2/Whatismyip/blob/master/COPYING |
