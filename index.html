@@ -1,53 +1,72 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    </head>
-    <body>
-      <script>
-      function findIP(onNewIP) {
-        var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
-        var pc = new myPeerConnection({iceServers: [{urls: "stun:stun.l.google.com:19302"}]}),
-          noop = function() {},
-          localIPs = {},
-          ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g,
-          key;
-      
-        function ipIterate(ip) {
-          if (!localIPs[ip]) onNewIP(ip);
-          localIPs[ip] = true;
-        }
-        
-        pc.createDataChannel("");
-        
-        pc.createOffer(function(sdp) {
-          sdp.sdp.split('\n').forEach(function(line) {
-            if (line.indexOf('candidate') < 0) return;
-            line.match(ipRegex).forEach(ipIterate);
-          });
-          pc.setLocalDescription(sdp, noop, noop);
-        }, noop);
-        
-        pc.onicecandidate = function(ice) {
-          if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
-          ice.candidate.candidate.match(ipRegex).forEach(ipIterate);
-        };
-      }
-      
-      
-      
-      var ul = document.createElement('ul');
-      ul.textContent = 'Your IPs are: '
-      document.body.appendChild(ul);
-      
-      function addIP(ip) {
-        console.log('got ip: ', ip);
-        var li = document.createElement('li');
-        li.textContent = ip;
-        ul.appendChild(li);
-      }
-      
-      findIP(addIP);
-        </script>
-    </body>
+
+<head>
+  <title>What Is My IP Address ?</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+</head>
+<header>
+</header>
+
+<body>
+  <div id="IP">
+    <h2>Your Public IP: </h2>
+    <h2 id="ip"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="LOCATION">
+    <button id="find-me">Check My Location</button><br />
+    <p id="status"></p>
+    <a id="map-link" target="_blank"></a>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="LANGUAGE">
+    <h2>Your Browser's Language Is: </h2>
+    <h2 id="language"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="SCREEN">
+    <h2>Your Screen Size Is: </h2>
+    <h2 id="screen"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="MOBILE">
+    <h2>Are You Mobile User: </h2>
+    <h2 id="mobile"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="COOKIES">
+    <h2>Cookies Enabled: </h2>
+    <h2 id="cookies"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="BROWSER">
+    <h2>Your Browser Is: </h2>
+    <h2 id="browser"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="OS">
+    <h2>Your OS Is: </h2>
+    <h2 id="os"></h2>
+  </div>
+  <p>ــــــــــــــــــــــ</p>
+  <div id="USERAGENT">
+    <h2>Your User Agent Is: </h2>
+    <h2 id="useragent"></h2>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+<footer>
+  <p>ــــــــــــــــــــــ</p>
+  <p>ــــــــــــــــــــــ</p>
+  <h2><a href="https://github.com/EsmailELBoBDev2/Whatismyip">It's Open Source Website</a> & It's Made By <a
+      href="https://esmailelbob.hashbase.io">Esmail EL BoB</a> & <a
+      href="https://github.com/EsmailELBoBDev2/Whatismyip/issues"> Feel Free To Request/Add/Suggest New Ideas</a></h2>
+  <h2><a href="https://github.com/EsmailELBoBDev2/Whatismyip/blob/master/LICENSE">Licensed Under GNU General Public
+      License v3.0</a></h2>
+</footer>
+
 </html>

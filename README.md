@@ -1,17 +1,13 @@
 | #  | Name | Link |
 | ------------- | ------------- | ------------- |
-| 1  | Read Before Use  | https://github.com/EsmailELBoBDev2/Whatismyip#----------------------------------------  |
-| 2  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------1  |
-| 3  | What's New  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
-| 4  | How To Install| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------3  |
-| 5  | Downloads  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------4  |
-| 6  | Preview/Demo  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------5  |
-| 7  | License  | https://github.com/EsmailELBoBDev2/Whatismyip/blob/master/COPYING |
-| 8  | My Other Projects  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------6  |
-| 9  | Thx!  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------7  |
-## ----------------------------------------
-# Read Before Use
-Before Use It, I Wanna To Let You Know That I Just Copied The Code Over The Internet So I Still Did not Preview The Code So Yeah & I Will Add My Edits Soon! :)
+| 1  | Why ?  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------  |
+| 2  | What's New  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------1  |
+| 3  | How To Install| https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------2  |
+| 4  | Downloads  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------3  |
+| 5  | Preview/Demo  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------4  |
+| 6  | License  | https://github.com/EsmailELBoBDev2/Whatismyip/blob/master/COPYING |
+| 7  | My Other Projects  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------5  |
+| 8  | Thx!  | https://github.com/EsmailELBoBDev2/Whatismyip#-----------------------------------------6  |
 ## ----------------------------------------
 # Why ?
 After I Started To Know More About Privacy & How Much FB & Other Companies Are Mining Our Data I Encouraged More To Build Open Source Alternates Like Youtube & [Invidio.us](https://github.com/omarroth/invidious) 
@@ -25,7 +21,7 @@ Although The Website Uses *WebRTC* To Check IPs & Most Of Us Disabled It But Thi
 1. *Nothing*
 ## ----------------------------------------
 # How To Edit Codes
-1. **Clone Project Files**: `git clone https://github.com/EsmailELBoBDev2/Whatismyip.git` (*You Not Need*: **README.md** *&* **COPYING** *Files*)
+1. **Clone Project Files**: `git clone https://github.com/EsmailELBoBDev2/Whatismyip.git` (*You Not Need*: **README.md** *&* **LICENSE** *Files*)
 
 2. **Download Code Editor** (*Skip This, If You Already Have One*): *https://yerl.org/5PJau*
 
@@ -44,6 +40,6 @@ Although The Website Uses *WebRTC* To Check IPs & Most Of Us Disabled It But Thi
 ***https://esmailelbobdev2.github.io/Whatismyip/***
 ## ----------------------------------------
 # My Other Projects
-**https://github.com/EsmailELBoBDev2?tab=repositories** *,* **https://gitlab.com/users/EsmailELBoBDev2/projects**
+**https://github.com/EsmailELBoBDev2?tab=repositories** *&* **https://gitlab.com/users/EsmailELBoBDev2/projects**
 ## ----------------------------------------
 # Thx For Using My Projects :smiley:
