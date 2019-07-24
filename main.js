@@ -4,6 +4,7 @@ var peerConn = new RTCPeerConnection({
     'iceServers': [{
         'urls': ['stun:stun.l.google.com:19302']
     }]
+
 });
 var dataChannel = peerConn.createDataChannel('test'); // Needs something added for some reason
 peerConn.createOffer({}).then((desc) => peerConn.setLocalDescription(desc));
@@ -193,7 +194,7 @@ function checkBrowser() {
 function checkOS() {
     var nVer = navigator.appVersion;
     var nAgt = navigator.userAgent;
-    var unknown = '-';
+    var unknown = '';
     var os = unknown;
     var clientStrings = [{
             s: 'Windows 10',
