@@ -1,18 +1,28 @@
 // Find my ip code
-var RTCPeerConnection = window.RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection;
-var peerConn = new RTCPeerConnection({
-    'iceServers': [{
-        'urls': ['stun:stun.l.google.com:19302']
-    }]
+// Since when webrtc is disabled, webkitRTCPeerConnection is nonexistent, therefore we try and catch and define RTCPeerConnection with no value because webrtc is disabled.
+try {
+    var RTCPeerConnection = window.RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection;
+} catch {
+    var RTCPeerConnection;
+}
+if (RTCPeerConnection) {
+    var peerConn = new RTCPeerConnection({
+        'iceServers': [{
+            'urls': ['stun:stun.l.google.com:19302']
+        }]
 
-});
-var dataChannel = peerConn.createDataChannel('test'); // Needs something added for some reason
-peerConn.createOffer({}).then((desc) => peerConn.setLocalDescription(desc));
-peerConn.onicecandidate = (e) => {
-    if (e.candidate == null) {
-        document.getElementById("ip").innerText = /c=IN IP4 ([^\n]*)\n/.exec(peerConn.localDescription.sdp)[1];
-    }
-};
+    });
+    var dataChannel = peerConn.createDataChannel('test'); // Needs something added for some reason
+    peerConn.createOffer({}).then((desc) => peerConn.setLocalDescription(desc));
+    peerConn.onicecandidate = (e) => {
+        if (e.candidate == null) {
+            document.getElementById("ip").innerText = /c=IN IP4 ([^\n]*)\n/.exec(peerConn.localDescription.sdp)[1];
+        }
+    };
+} else {
+    // Inform user that webrtc fetch failed
+    document.getElementById("ip").innerText = 'Failed to fetch IP via WebRTC, perhaps your WebRTC is disabled?';
+}
 // ـــــــــــــــــــــــــــــــــــ
 
 // Location
