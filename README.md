@@ -22,9 +22,11 @@ Although The Website Uses *WebRTC* To Check IPs & Most Of Us Disabled It But Thi
 ## ----------------------------------------
 # What's New ?                      
 ## (For Users): 
-1. *Nothing*
+1. *Added* **Speed Test** *Feature*
+
+2. *Added A Message To Notify User If He Block JS*
 ## (For Devs): 
-1. *Nothing*
+1. *Nothing, Sorry*
 ## ----------------------------------------
 # How To Edit Codes
 1. **Clone Project Files**: `git clone https://github.com/EsmailELBoBDev2/Whatismyip.git` (*You Not Need*: **README.md** *&* **LICENSE** *Files*)
