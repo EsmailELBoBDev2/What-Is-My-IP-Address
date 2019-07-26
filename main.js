@@ -1,18 +1,36 @@
-// Find my ip code
-var RTCPeerConnection = window.RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection;
-var peerConn = new RTCPeerConnection({
-    'iceServers': [{
-        'urls': ['stun:stun.l.google.com:19302']
-    }]
+// Find my ip code via HTTP request, slightly more reliable than WebRTC unless user blocks Cross-origin requests or has 3rd party HTTP fetching disabled.
+const Http = new XMLHttpRequest();
+Http.open("GET", "https://ipinfo.io/ip");
+Http.send();
+Http.onreadystatechange = (e) => {
+		document.getElementById("ip-http").innerText = Http.responseText;
+	if (!Http.responseText) {
+		// Informing user that HTTP fetch failed
+		document.getElementById("ip-http").innerText = "Failed to fetch IP with HTTP, perhaps your browser or add-on is blocking cross-origin / 3rd party HTTP requests?";
+	}
+}
+// Find my ip code via WebRTC.
+// Since when webrtc is disabled, webkitRTCPeerConnection is nonexistent, therefore we try and catch and define RTCPeerConnection with no value because webrtc is disabled.
+try {var RTCPeerConnection = window.RTCPeerConnection || webkitRTCPeerConnection || mozRTCPeerConnection;}
+catch {var RTCPeerConnection;}
+if(RTCPeerConnection){
+    var peerConn = new RTCPeerConnection({
+        'iceServers': [{
+            'urls': ['stun:stun.l.google.com:19302']
+        }]
 
-});
-var dataChannel = peerConn.createDataChannel('test'); // Needs something added for some reason
-peerConn.createOffer({}).then((desc) => peerConn.setLocalDescription(desc));
-peerConn.onicecandidate = (e) => {
-    if (e.candidate == null) {
-        document.getElementById("ip").innerText = /c=IN IP4 ([^\n]*)\n/.exec(peerConn.localDescription.sdp)[1];
-    }
-};
+    });
+    var dataChannel = peerConn.createDataChannel('test'); // Needs something added for some reason
+    peerConn.createOffer({}).then((desc) => peerConn.setLocalDescription(desc));
+    peerConn.onicecandidate = (e) => {
+        if (e.candidate == null) {
+            document.getElementById("IP/ip-webrtc").innerText = /c=IN IP4 ([^\n]*)\n/.exec(peerConn.localDescription.sdp)[1];
+        }
+    };
+} else {
+    // Inform user that webrtc fetch failed
+    document.getElementById("ip-webrtc").innerText = 'Failed to fetch IP via WebRTC, perhaps your WebRTC is disabled?';
+}
 // ـــــــــــــــــــــــــــــــــــ
 
 // Location
